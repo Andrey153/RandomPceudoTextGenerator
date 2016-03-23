@@ -4,6 +4,7 @@ import java.util.Random;
 
 /**
  * Created by Andrey Vyalkov on 23.03.2016.
+ * minor changes
  */
 
 public class RandomPceudoTextGenerator {
