@@ -5,9 +5,65 @@ import java.io.IOException;
 
 /**
  * Created by Andrey Vyalkov on 23.03.2016.
+ *
+ * If program receive the argument (file name),
+ * it will run the  parameters generator for the initialization of the generator.
+ * On the frequency distribution of characters.
+ * Now available for English and Russian.
+ * Poseble generate parameters for overs languges.
+ * The resul will be like this
+ *
+ *
+ <pre>
+ {@code
+ weightOfLetters = new int[][] {
+ {'\u0061',   39553}, //a
+ {'\u0062',    7642}, //b
+ {'\u0063',   10656}, //c
+ {'\u0064',   22787}, //d
+ {'\u0065',   57748}, //e
+ {'\u0066',   11817}, //f
+ {'\u0067',    9686}, //g
+ {'\u0068',   31360}, //h
+ {'\u0069',   33355}, //i
+ {'\u006a',     364}, //j
+ {'\u006b',    3430}, //k
+ {'\u006c',   17227}, //l
+ {'\u006d',   13735}, //m
+ {'\u006e',   32140}, //n
+ {'\u006f',   38671}, //o
+ {'\u0070',    7456}, //p
+ {'\u0071',     322}, //q
+ {'\u0072',   25724}, //r
+ {'\u0073',   27427}, //s
+ {'\u0074',   46698}, //t
+ {'\u0075',   13275}, //u
+ {'\u0076',    5115}, //v
+ {'\u0077',   13364}, //w
+ {'\u0078',     616}, //x
+ {'\u0079',   10026}, //y
+ {'\u007a',     194}, //z
+ };
+
+ weightOfSign = new int[][] {
+ {'\u002e',    2325}, //.
+ {'\u0021',      79}, //!
+ {'\u003f',     137}, //?
+ };
+
+ percentChanceOfComma = 9;
+
+ weightNumberOfletters = new int[] {
+ 7695,24439,27509,24780,13877,8787,6058,3434,2361,1530,739,246,160,22,11,0,0,0,0,0,
+ };
+
+ weightNumberOfWords = new int[] {
+ 99,25,26,21,17,26,27,25,22,26,35,22,23,29,29,19,27,25,32,32,21,31,35,34,38,33,28,36,34,28,
+ };
+ }
+ </pre>
+
  */
-
-
 public class ParametersGenerator {
 
     public static String alphabet = "abcdefghijklmnopqrstuvwxyz";

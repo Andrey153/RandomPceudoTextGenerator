@@ -4,13 +4,12 @@ import java.util.Random;
 
 /**
  * Created by Andrey Vyalkov on 23.03.2016.
- * minor changes 9
+ *
  */
-
 public class RandomPceudoTextGenerator {
 
-    boolean newLineEverySentence = false;
-    int widthText = 80;
+    public boolean newLineEverySentence = false;
+    public int widthText = 80;
 
     public static int[][] weightOfLetters;
     public static int[][] weightOfSign;
@@ -34,9 +33,11 @@ public class RandomPceudoTextGenerator {
     private int currentPos = 0;
 
 
-    // convert {1,2,1,0} to {1,3,4,4}
-
-
+    /**
+     * convert {1,2,1,0} to {1,3,4,4}
+     * @param weight
+     * @return
+     */
     static int[] calculateLineWeight(int[] weight) {
 
         int wl = weight.length;
@@ -50,7 +51,13 @@ public class RandomPceudoTextGenerator {
         return lineWeight;
     }
 
-    // convert {['a',1],{'b',2},{'c',1}} to {1,3,4}
+
+
+    /**
+     * convert {['a',1],{'b',2},{'c',1}} to {1,3,4}
+     * @param weight
+     * @return
+     */
     static int[] calculateLineWeightForAlphapet(int[][] weight) {
 
         int wl = weight.length;
@@ -101,7 +108,7 @@ public class RandomPceudoTextGenerator {
      */
     RandomPceudoTextGenerator(String language) {
 
-        if (language == "RU") {
+        if (language.equals("RU")) {
 
             weightOfLetters = new int[][] {
                     {'\u0430',   45176}, //а
