@@ -2,7 +2,7 @@ package rptg;
 
 import java.io.*;
 
-/**
+/***8
  * Created by Andrey Vyalkov on 23.03.2016.
  *
  * It's exemple how to use text generator.
